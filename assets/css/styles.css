@@ -1,113 +1,167 @@
-/* Light Mode (Default) */
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-  }
-  
-  header p {
-    margin: 5px 0 0;
-    font-size: 1.2rem;
-  }
-  
-  button#modeToggle {
-    background: #555;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  button#modeToggle:hover {
-    background: #777;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 30px;
-  }
-  
-  h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-  }
-  
-  .job, .education-item {
-    margin-bottom: 20px;
-  }
-  
-  .job h3, .education-item h3 {
-    margin: 0;
-    font-size: 1.3rem;
-  }
-  
-  .date {
-    color: #777;
-    font-size: 0.9rem;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-  }
-  
-  /* Night Mode */
-  body.night-mode {
-    background-color: #1a1a1a;
-    color: #f4f4f4;
-  }
-  
-  body.night-mode header {
-    background: #111;
-  }
-  
-  body.night-mode h2 {
-    color: #f4f4f4;
-    border-bottom-color: #f4f4f4;
-  }
-  
-  body.night-mode button#modeToggle {
-    background: #444;
-    color: #fff;
-  }
-  
-  body.night-mode button#modeToggle:hover {
-    background: #666;
-  }
-  
-  body.night-mode footer {
-    background: #111;
-  }
-  
-  body.night-mode .date {
-    color: #aaa;
-  }
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background: linear-gradient(135deg, #333, #555);
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+button#modeToggle {
+  background: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button#modeToggle:hover {
+  background: #777;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.job, .education-item {
+  margin-bottom: 25px;
+}
+
+.job h3, .education-item h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.date {
+  color: #777;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #333, #555);
+  color: #fff;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Night Mode */
+body.night-mode {
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+}
+
+body.night-mode header {
+  background: linear-gradient(135deg, #111, #333);
+}
+
+body.night-mode section {
+  background: #2a2a2a;
+  color: #f4f4f4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.night-mode h2 {
+  color: #f4f4f4;
+  border-bottom-color: #f4f4f4;
+}
+
+body.night-mode .job h3, .education-item h3 {
+  color: #f4f4f4;
+}
+
+body.night-mode .date {
+  color: #aaa;
+}
+
+body.night-mode button#modeToggle {
+  background: #444;
+  color: #fff;
+}
+
+body.night-mode button#modeToggle:hover {
+  background: #666;
+}
+
+body.night-mode footer {
+  background: linear-gradient(135deg, #111, #333);
+}
+
+body.night-mode a {
+  color: #1e90ff;
+}
+
+body.night-mode a:hover {
+  color: #00bfff;
+}
